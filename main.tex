@@ -1,0 +1,139 @@
+\documentclass{article}
+
+%%%%%%% PACKAGES %%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage[margin=3cm]{geometry}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{CS 457 Assignment 1}
+\author{Ali Asghar Yousuf}
+\date{\today}
+
+\begin{document}
+\pagenumbering{roman} % Start roman numbering
+% \newpage
+\setcounter{page}{1}
+
+% \newpage
+\pagenumbering{arabic} % Start roman numbering
+
+%%% CONTENT HERE %%%%
+
+\maketitle
+
+\section*{Part I}
+\begin{tabular}{|c|c|p{11cm}|}
+    \hline
+    \textbf{Attribute} & \textbf{Scale} & \textbf{Explanation}                                                                  \\
+    \hline
+    time               & Interval       & Time is an interval scale because it lacks a true zero point.                         \\
+    \hline
+    latitude           & Interval       & Latitude is interval as it has a natural order within its defined range.              \\
+    \hline
+    longitude          & Interval       & Longitude is interval with a natural order within its defined range.                  \\
+    \hline
+    depth              & Ratio          & Depth is a ratio scale, measured in meters, and supports all mathematical operations. \\
+    \hline
+    mag                & Ratio          & Magnitude is ratio with a natural ordering indicating the severity of earthquakes.    \\
+    \hline
+    magType            & Nominal        & MagType is nominal with no logical order (e.g., ml, md).                              \\
+    \hline
+    nst                & Ratio          & nst is ratio, supporting mathematical operations.                                     \\
+    \hline
+    gap                & Ratio          & gap is ratio, supporting mathematical operations.                                     \\
+    \hline
+    dmin               & Ratio          & dmin is ratio, supporting mathematical operations.                                    \\
+    \hline
+    rms                & Ratio          & rms is ratio, supporting mathematical operations.                                     \\
+    \hline
+    net                & Nominal        & net is nominal with no logical order.                                                 \\
+    \hline
+    id                 & Nominal        & id is nominal with no logical order.                                                  \\
+    \hline
+    updated            & Interval       & Updated time is interval due to the lack of a true zero point.                        \\
+    \hline
+    place              & Nominal        & Place is nominal because populated places cannot be ordered.                          \\
+    \hline
+    type               & Nominal        & Type is nominal with no logical order.                                                \\
+    \hline
+    horizontalError    & Ratio          & horizontalError is ratio, supporting mathematical operations.                         \\
+    \hline
+    depthError         & Ratio          & depthError is ratio, supporting mathematical operations.                              \\
+    \hline
+    magError           & Ratio          & magError is ratio, supporting mathematical operations.                                \\
+    \hline
+    magNst             & Ratio          & magNst is ratio, supporting mathematical operations.                                  \\
+    \hline
+    status             & Nominal        & Status is nominal with no logical order (e.g., automatic, reviewed).                  \\
+    \hline
+    LocationSource     & Nominal        & LocationSource is nominal with no logical order.                                      \\
+    \hline
+    magSource          & Nominal        & magSource is nominal with no logical order.                                           \\
+    \hline
+\end{tabular}
+
+\section*{Part II}
+\begin{tabular}{|p{2cm}|c|p{10cm}|}
+    \hline
+    \textbf{Item}                                            & \textbf{Data Type} & \textbf{Explanation}                                                                                                                                    \\
+    \hline
+    Time (AM or PM)                                          & Nominal            & Time is measured using categories (AM and PM) with no inherent order or mathematical operations.                                                        \\
+    \hline
+    Brightness (measured by a light meter)                   & Ratio              & Brightness, measured by a light meter, is a continuous numerical variable with a true zero point, allowing for meaningful mathematical operations.      \\
+    \hline
+    Brightness (measured by people's judgments)              & Ordinal            & Brightness, as perceived by people's judgments, can be ordered based on relative brightness but lacks a consistent interval scale or a true zero point. \\
+    \hline
+    Angles (degrees between 0\degree and 360\degree)         & Interval           & Angles measured in degrees have a natural order and interval scale, but they lack a true zero point (0\degree does not signify the absence of angle).   \\
+    \hline
+    Medals (Bronze, Silver, Gold)                            & Ordinal            & Medals awarded at the Olympics are ordinal categories which can be ordered.                                                                             \\
+    \hline
+    Height above sea level                                   & Ratio              & Height above sea level is a continuous numerical variable with a true zero point, allowing for meaningful mathematical operations.                      \\
+    \hline
+    Number of patients in a hospital                         & Ratio              & The number of patients is a continuous numerical variable with a true zero point, enabling meaningful mathematical operations.                          \\
+    \hline
+    ISBN numbers for books                                   & Nominal            & ISBN numbers are unique identifiers for books and are nominal, with no inherent order or mathematical operations.                                       \\
+    \hline
+    Ability to pass light (opaque, translucent, transparent) & Ordinal            & The ability to pass light represents ordinal categories which can be ranked based on the amount of light they let through.                              \\
+    \hline
+    Military rank                                            & Ordinal            & Military ranks have a clear order and can be ranked based on hierarchy, but the intervals between ranks may not be consistent.                          \\
+    \hline
+    Distance from the center of HU campus                    & Ratio              & Distance is a continuous numerical variable with a true zero point, allowing for meaningful mathematical operations.                                    \\
+    \hline
+    Density of a substance (grams per cubic centimeter)      & Ratio              & Density is a continuous numerical variable with a true zero point, enabling meaningful mathematical operations.                                         \\
+    \hline
+\end{tabular}
+
+\section*{Part III}
+\begin{tabular}{|p{4cm}|c|p{7cm}|}
+    \hline
+    \textbf{Attribute} & \textbf{Data Type} & \textbf{Explanation}                                                                                                       \\
+    \hline
+    Gender             & Nominal            & Gender is a categorical variable with no inherent order.                                                                   \\
+    \hline
+    Major              & Nominal            & Majors represent categories with no inherent order.                                                                        \\
+    \hline
+    Residential Status & Nominal            & Residential statuses (e.g., On-campus, Off-campus) are categorical with no inherent order.                                 \\
+    \hline
+    Academic Year      & Ordinal            & Academic years (e.g., Freshman, Sophomore) can be ordered based on admission year.                                         \\
+    \hline
+    Class Level        & Ordinal            & Different classes have different levels such as 100, 200, 300, etc. which are based on the difficulty level of that course \\
+    \hline
+    Scholarship        & Ordinal            & The \% of scholarship is an ordinal variable which can be ranked.                                                          \\
+    \hline
+    Family Income      & Ratio              & Family income is a continuous numerical variable with a true zero point, enabling meaningful mathematical operations.      \\
+    \hline
+    Attendance Rate    & Ratio              & Attendance rate is a continuous numerical variable with a true zero point, allowing meaningful mathematical operations.    \\
+    \hline
+    GPA                & Ratio              & GPA is a continuous numerical variable with a true zero point, supporting meaningful mathematical operations.              \\
+    \hline
+    SAT Score          & Interval           & SAT scores for attempted tests are continuous numerical values with no true zero point.                                    \\
+    \hline
+    Class Timings      & Interval           & Each student has different class timings, which is a continuous numerical variable with no true zero point.                \\
+    \hline
+    IQ Score           & Interval           & IQ scores are continuous numerical values with no true zero point.                                                         \\
+    \hline
+\end{tabular}
+
+\end{document}
